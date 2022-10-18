@@ -7,7 +7,7 @@ export interface TextInputRootProps {
 
 function TextInputRoot(props: TextInputRootProps) {
   return (
-    <div className="flex items-center gap-3 h-12 py-4 px-3 rounded bg-gray-800 w-full focus-within:ring-2 ring-cyan-300" >
+    <div className="flex items-center gap-3 h-12 py-4 px-3 rounded bg-gray-800 w-full focus-within:ring-2 ring-cyan-300">
       {props.children}
     </div>
   );
@@ -33,7 +33,7 @@ function TextInputInput(props: TextInputInputProps) {
     <input
       autoComplete="false"
       className="bg-transparent flex-1 text-gray-100 text-xs
-       placeholder:text-gray-400 outline-none focus:bg-transparent 
+       placeholder:text-gray-400 outline-none focus:bg-transparent autofill:bg-transparent 
       "
       {...props}
     />
